@@ -1,0 +1,2 @@
+export function PageHeading({ title, description }) { return <div className="page-heading"><p className="eyebrow">OctoFit Tracker</p><h1>{title}</h1><p>{description}</p></div> }
+export function DataState({ status, error, empty }) { if (status === 'loading') return <p className="state-message">Loading data...</p>; if (status === 'error') return <p className="state-message text-danger">{error}</p>; if (empty) return <p className="state-message">No records found yet.</p>; return null }

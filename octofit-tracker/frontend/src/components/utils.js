@@ -1,0 +1,2 @@
+export function displayName(person) { return person?.firstName ? `${person.firstName} ${person.lastName ?? ''}`.trim() : person?.username ?? 'Unknown athlete' }
+export function formatDate(date) { return date ? new Intl.DateTimeFormat(undefined, { dateStyle: 'medium' }).format(new Date(date)) : '-' }
